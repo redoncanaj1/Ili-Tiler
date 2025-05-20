@@ -2,8 +2,6 @@ import React from 'react';
 import { Wrench, Clock, Award, Users, CheckCircle } from 'lucide-react';
 import Hero from '../components/Hero';
 import SectionTitle from '../components/SectionTitle';
-import TestimonialCard from '../components/TestimonialCard';
-import testimonials from '../data/testimonials';
 
 const About: React.FC = () => {
   return (
@@ -234,46 +232,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 md:py-24 bg-slate-800 text-white">
-        <div className="container mx-auto px-6 lg:px-8">
-          <SectionTitle 
-            title="Client Testimonials"
-            subtitle="What our satisfied customers have to say about working with Ili Tiler."
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            {testimonials.map(testimonial => (
-              <TestimonialCard
-                key={testimonial.id}
-                quote={testimonial.quote}
-                author={testimonial.author}
-                role={testimonial.role}
-                avatar={testimonial.avatar}
-              />
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 md:py-24 bg-orange-500">
-        <div className="container mx-auto px-6 lg:px-8">
-          <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              Ready to Work With Us?
-            </h2>
-            <p className="text-white text-lg mb-8">
-              Contact our team today to discuss your tiling project and experience the Ili Tiler difference for yourself.
-            </p>
-            <a
-              href="/contact"
-              className="inline-block px-8 py-4 bg-white text-orange-500 font-medium rounded-md shadow-lg hover:bg-slate-100 transition duration-300"
-            >
-              Get in Touch
-            </a>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };
