@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .custom-scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: var(--primary-500) var(--slate-200);
+  }
+}
+
+:root {
+  --primary-500: #f97316;
+  --slate-200: #e2e8f0;
+}
