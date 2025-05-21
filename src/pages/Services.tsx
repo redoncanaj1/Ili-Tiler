@@ -131,16 +131,15 @@ const Services: React.FC = () => {
               ))}
             </Tab.List>
             <Tab.Panels>
-              {categories.map((category, idx) => (
+              {categories.map((_category, idx) => (
                 <Tab.Panel key={idx} className="focus:outline-none">
                   <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {filteredProjects.map(project => (
                       <ProjectCard
                         key={project.id}
-                        image={project.image}
                         title={project.title}
+                        image={project.image}
                         category={project.category}
-                        description={project.description}
                       />
                     ))}
                   </div>

@@ -129,6 +129,7 @@ const Home: React.FC = () => {
             {featuredProjects.map(project => (
               <ProjectCard
                 key={project.id}
+                title={project.title}
                 image={project.image}
                 category={project.category}
               />
@@ -137,7 +138,7 @@ const Home: React.FC = () => {
           
           <div className="mt-12 text-center">
             <Link
-              to="/projects"
+              to="/services"
               className="inline-flex items-center px-6 py-3 bg-orange-500 text-white font-medium rounded-md shadow-sm hover:bg-orange-600 transition-colors duration-300"
             >
               View All Projects

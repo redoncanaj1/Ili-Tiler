@@ -1,16 +1,16 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Grid, Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import logo from '../img/logo.png';
 
 const Footer: React.FC = () => {
   return (
     <footer className="bg-slate-900 text-white">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <Grid className="h-8 w-8 text-white" />
-              <span className="ml-2 text-xl font-bold">Ili Tiler</span>
+              <img src={logo} alt="Ili Tiler Logo" className="h-8 w-16" />
             </div>
             <p className="text-slate-300 mb-4">
               Professional tiling services with over 10 years of experience. Quality work, attention to detail, and customer satisfaction guaranteed.
@@ -68,7 +68,7 @@ Birmingham</span>
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-slate-700 text-center text-slate-400">
+        <div className="mt-4 pt-2 border-t border-slate-700 text-center text-slate-400">
           <p>© {new Date().getFullYear()} Ili Tiler. All rights reserved.</p>
         </div>
       </div>

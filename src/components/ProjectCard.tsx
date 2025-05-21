@@ -1,17 +1,19 @@
 // src/components/ProjectCard.tsx
 import React, { useState, useRef, useEffect } from 'react';
+import ImageModal from './ImageModal';
 
 interface ProjectCardProps {
   image: string;
+  title: string;
   category: string;
 }
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ image, category }) => {
   const [isHovered, setIsHovered] = useState(false);
+  const [showModal, setShowModal] = useState(false);
   const cardRef = useRef<HTMLDivElement>(null);
-  const imgRef = useRef<HTMLImageElement>(null);
 
-  // 3D tilt effect (same as before)
+  // 3D tilt effect
   useEffect(() => {
     const card = cardRef.current;
     if (!card) return;
@@ -46,40 +48,42 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ image, category }) => {
   }, []);
 
   return (
-    <div 
-      ref={cardRef}
-      className="card-3d relative w-full h-full overflow-hidden rounded-xl shadow-lg transition-all duration-300 group"
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-      style={{ transition: 'transform 0.1s ease' }}
-    >
-      {/* Image container with consistent aspect ratio */}
-      <div className="relative w-full h-64 overflow-hidden"> {/* Fixed height */}
-        <img 
-          ref={imgRef}
-          src={image} 
-          className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-110"
-          style={{ 
-            objectPosition: 'center center', // Ensure center of image is always visible
-            minWidth: '100%',
-            minHeight: '100%'
-          }}
-        />
-      </div>
-      
-      {/* Hover overlay */}
-      <div className={`absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-90' : 'opacity-0'}`}>
-      </div>
-      
-      <div className={`absolute inset-0 glass-morphism transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
-        <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-          <p className="text-primary-400 text-sm font-medium mb-2 animate-float">
-            {category}
-          </p>
-         
+    <>
+      <div 
+        ref={cardRef}
+        className="card-3d relative w-full h-full overflow-hidden rounded-xl shadow-lg transition-all duration-300 group cursor-pointer"
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={() => setShowModal(true)}
+        style={{ transition: 'transform 0.1s ease' }}
+      >
+        <div className="relative w-full h-64 overflow-hidden">
+          <img 
+            src={image} 
+            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+          />
+        </div>
+        
+        <div className={`absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/80 to-transparent transition-opacity duration-300 ${isHovered ? 'opacity-90' : 'opacity-0'}`}>
+        </div>
+        
+        <div className={`absolute inset-0 glass-morphism transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`}>
+          <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
+            <p className="text-primary-400 text-sm font-medium mb-2 animate-float">
+              {category}
+            </p>
+     
+          </div>
         </div>
       </div>
-    </div>
+
+      {showModal && (
+        <ImageModal 
+          imageUrl={image} 
+          onClose={() => setShowModal(false)}
+        />
+      )}
+    </>
   );
 };
 
