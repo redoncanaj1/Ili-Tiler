@@ -125,8 +125,6 @@ Birmingham
           </div>
         </div>
       </section>
-
-      {/* FAQ Section */}
       <section className="py-16 md:py-24 bg-white">
         <div className="container mx-auto px-6 lg:px-8">
           <SectionTitle 
@@ -179,9 +177,6 @@ Birmingham
           </div>
         </div>
       </section>
-
-      {/* CTA Section */}
-      
     </div>
   );
 };

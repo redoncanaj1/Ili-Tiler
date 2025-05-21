@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X} from 'lucide-react';
+import logo from '../img/logo.png';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -47,7 +48,7 @@ const Navbar: React.FC = () => {
               onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
             >
               <span className="text-xl font-bold text-white">
-                <img src="/src/img/logo.png" alt="Ili Tiler" className="h-8 w-16" />
+                <img src={logo} alt="Ili Tiler" className="h-8 w-16" />
               </span>
             </Link>
           </div>
