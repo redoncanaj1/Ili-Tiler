@@ -12,6 +12,7 @@ import bathroom9 from './bathroom9.jpeg';
 import bathroom10 from './bathroom10.jpeg';
 import bathroom11 from './bathroom11.jpeg';
 import bathroom12 from './bathroom12.jpeg';
+import bathroom13 from './bathroom13.jpeg';
 
 // Floor images (1-13)
 import floor1 from './floor1.jpeg';
@@ -40,7 +41,6 @@ import kitchen8 from './kitchen8.jpeg';
 import kitchen9 from './kitchen9.jpeg';
 import kitchen10 from './kitchen10.jpeg';
 import kitchen11 from './kitchen11.jpeg';
-import kitchen12 from './kitchen12.jpeg';
 
 // Outdoor images (1-3)
 import outdoor1 from './outdoor1.jpeg';
@@ -51,7 +51,7 @@ const images = {
   // Bathroom
   bathroom1, bathroom2, bathroom3, bathroom4, bathroom5,
   bathroom6, bathroom7, bathroom8, bathroom9, bathroom10,
-  bathroom11, bathroom12,
+  bathroom11, bathroom12, bathroom13,
   
   // Floor
   floor1, floor2, floor3, floor4, floor5,
@@ -61,7 +61,7 @@ const images = {
   // Kitchen
   kitchen1, kitchen2, kitchen3, kitchen4, kitchen5,
   kitchen6, kitchen7, kitchen8, kitchen9, kitchen10,
-  kitchen11, kitchen12,
+  kitchen11, 
   
   // Outdoor
   outdoor1, outdoor2, outdoor3

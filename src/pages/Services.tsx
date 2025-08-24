@@ -66,7 +66,7 @@ const Services: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-slate-800 mb-3">Floor Installations</h3>
               <p className="text-slate-600">
-                Durable and beautiful floor tiling for every room in your home. We work with porcelain, ceramic, natural stone, and luxury vinyl tiles.
+Durable and beautiful floor tiling for any room. We work with porcelain, ceramic, natural stone, gliter, slate  and luxury vinyl tiles to create stunning and long-lasting floors.
               </p>
             </div>
           </div>

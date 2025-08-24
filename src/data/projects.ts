@@ -223,12 +223,6 @@ const projects = [
     category: 'Kitchen',
     image: images.kitchen11
   },
-  {
-    id: 38,
-    title: 'Kitchen Feature Wall',
-    category: 'Kitchen',
-    image: images.kitchen12
-  },
 
   
   // Outdoor Projects (40-42)

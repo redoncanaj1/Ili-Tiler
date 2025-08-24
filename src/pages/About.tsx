@@ -24,7 +24,7 @@ const About: React.FC = () => {
               </h2>
               <div className="h-1 w-20 bg-orange-500 mb-6"></div>
               <p className="text-slate-600 mb-6">
-                Ili Tiler was founded in 2015 by John Ili, a master tiler with over two decades of experience in the construction industry. What began as a small, one-man operation has grown into a respected tiling company serving residential and commercial clients throughout the region.
+                Ili Tiler was founded in 2009 by Ili, a master tiler with over two decades of experience in the construction industry. What began as a small, one-man operation has grown into a respected tiling company serving residential and commercial clients throughout the region.
               </p>
               <p className="text-slate-600 mb-6">
                 Our journey has been built on a foundation of craftsmanship, integrity, and customer satisfaction. We've earned our reputation through consistent quality, attention to detail, and a commitment to treating every project - large or small - with the same level of care and professionalism.
@@ -40,7 +40,7 @@ const About: React.FC = () => {
                 className="rounded-lg shadow-lg w-full h-auto object-cover" 
               />
               <div className="absolute -bottom-6 -right-6 bg-orange-500 text-white px-6 py-4 rounded-lg shadow-lg">
-                <p className="font-semibold">Founded in 2015</p>
+                <p className="font-semibold">Founded in 2009</p>
               </div>
             </div>
           </div>
@@ -72,7 +72,7 @@ const About: React.FC = () => {
               </div>
               <h3 className="text-xl font-semibold text-slate-800 mb-3">Quality Materials</h3>
               <p className="text-slate-600">
-                We use only premium materials and products from trusted suppliers to ensure durability, beauty, and performance.
+                We use only premium materials and products from trusted suppliers to ensure durability, beauty, and performance and lasting long etc.
               </p>
             </div>
             
@@ -160,79 +160,7 @@ const About: React.FC = () => {
       </section>
 
       {/* Team Section */}
-      <section className="py-16 md:py-24 bg-slate-50">
-        <div className="container mx-auto px-6 lg:px-8">
-          <SectionTitle 
-            title="Meet Our Team"
-            subtitle="The skilled professionals behind our exceptional tiling services."
-          />
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.pexels.com/photos/8961438/pexels-photo-8961438.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="John Ili" 
-                className="w-full h-64 object-cover object-center" 
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800">John Ili</h3>
-                <p className="text-orange-500 font-medium mb-3">Founder & Master Tiler</p>
-                <p className="text-slate-600 text-sm">
-                  With over 20 years of experience, John leads our team with expertise and passion for perfect tiling.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.pexels.com/photos/8961401/pexels-photo-8961401.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Maria Rodriguez" 
-                className="w-full h-64 object-cover object-center" 
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800">Maria Rodriguez</h3>
-                <p className="text-orange-500 font-medium mb-3">Design Specialist</p>
-                <p className="text-slate-600 text-sm">
-                  Maria helps clients select the perfect tiles and creates stunning custom designs for unique spaces.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.pexels.com/photos/8961422/pexels-photo-8961422.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="David Chen" 
-                className="w-full h-64 object-cover object-center" 
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800">David Chen</h3>
-                <p className="text-orange-500 font-medium mb-3">Senior Installer</p>
-                <p className="text-slate-600 text-sm">
-                  David specializes in complex installations and brings precision and efficiency to every project.
-                </p>
-              </div>
-            </div>
-            
-            <div className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img 
-                src="https://images.pexels.com/photos/8962118/pexels-photo-8962118.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" 
-                alt="Sarah Johnson" 
-                className="w-full h-64 object-cover object-center" 
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-slate-800">Sarah Johnson</h3>
-                <p className="text-orange-500 font-medium mb-3">Project Manager</p>
-                <p className="text-slate-600 text-sm">
-                  Sarah ensures every project runs smoothly from initial consultation to final walkthrough.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      
+     
     </div>
   );
 };

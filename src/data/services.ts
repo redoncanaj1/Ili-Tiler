@@ -21,7 +21,7 @@ const services: Service[] = [
   {
     id: 3,
     title: 'Floor Installations',
-    description: 'Durable and beautiful floor tiling for any room. We work with porcelain, ceramic, natural stone, and luxury vinyl tiles to create stunning and long-lasting floors.',
+    description: 'Durable and beautiful floor tiling for any room. We work with porcelain, ceramic, natural stone, gliter, slate  and luxury vinyl tiles to create stunning and long-lasting floors.',
     icon: 'SquareStack'
   },
   {

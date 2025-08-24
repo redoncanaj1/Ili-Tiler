@@ -24,13 +24,14 @@ const Home: React.FC = () => {
   const featuredProjects = projects.slice(0, 3);
   
   return (
-    <div>
+    <div className="w-100-full">
       <Hero
         title="Expert Tiling Solutions for Your Home"
         subtitle="Professional, reliable, and high-quality tiling services for bathrooms, kitchens, floors, and outdoor spaces."
         ctaText="Get a Free Quote"
         ctaLink="/contact"
-        backgroundImage={images.bathroom1} // Using imported image
+        backgroundImage={images.bathroom1}
+         // Using imported image
       />
 
       {/* About Section */}
@@ -103,16 +104,6 @@ const Home: React.FC = () => {
                 description={service.description}
               />
             ))}
-          </div>
-          
-          <div className="mt-12 text-center">
-            <Link
-              to="/services"
-              className="inline-flex items-center px-6 py-3 bg-slate-800 text-white font-medium rounded-md shadow-sm hover:bg-slate-700 transition-colors duration-300"
-            >
-              View All Services
-              <ChevronRight className="h-4 w-4 ml-1" />
-            </Link>
           </div>
         </div>
       </section>

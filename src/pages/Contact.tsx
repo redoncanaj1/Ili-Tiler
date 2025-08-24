@@ -66,7 +66,7 @@ const Contact: React.FC = () => {
                     <h4 className="text-base font-medium text-slate-800">Address</h4>
                     <p className="text-slate-600">
                     Moorcroft Rd,
- B13 8LS
+                    B13 8LS
 Birmingham
                     </p>
                   </div>
@@ -88,7 +88,7 @@ Birmingham
               <div className="mt-8">
                 <h3 className="text-xl font-semibold text-slate-800 mb-4">Follow Us</h3>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-slate-100 hover:bg-orange-100 text-slate-700 hover:text-orange-500 transition-colors rounded-full w-10 h-10 flex items-center justify-center">
+                  <a href="https://web.facebook.com/people/Midlands-Commercial-Tiling/100080934510162/?mibextid=wwXIfr&rdid=Xo6ytbcJ7M5tC2DQ&share_url=https%3A%2F%2Fweb.facebook.com%2Fshare%2F16qPG6rhsf%2F%3Fmibextid%3DwwXIfr%26_rdc%3D1%26_rdr" target="_blank" className="bg-slate-100 hover:bg-orange-100 text-slate-700 hover:text-orange-500 transition-colors rounded-full w-10 h-10 flex items-center justify-center">
                     <span className="sr-only">Facebook</span>
                     <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd" />
@@ -125,58 +125,7 @@ Birmingham
           </div>
         </div>
       </section>
-      <section className="py-16 md:py-24 bg-white">
-        <div className="container mx-auto px-6 lg:px-8">
-          <SectionTitle 
-            title="Frequently Asked Questions"
-            subtitle="Find answers to common questions about our tiling services."
-          />
-          
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-10">
-            <div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">What areas do you service?</h3>
-              <p className="text-slate-600">
-                We provide tiling services throughout New York City and surrounding areas within a 50-mile radius, including New Jersey and Connecticut.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">Do you offer free estimates?</h3>
-              <p className="text-slate-600">
-                Yes, we provide free, no-obligation estimates for all tiling projects. We'll visit your property to take measurements and discuss your vision before providing a detailed quote.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">How long does a typical tiling project take?</h3>
-              <p className="text-slate-600">
-                Project duration varies based on size and complexity. A standard bathroom might take 3-5 days, while larger projects could take 1-2 weeks. We'll provide a timeline estimate during consultation.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">Do you help with tile selection?</h3>
-              <p className="text-slate-600">
-                Absolutely! Our design specialists can help you choose the perfect tiles for your space, considering factors like style, durability, maintenance, and budget.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">Are you licensed and insured?</h3>
-              <p className="text-slate-600">
-                Yes, Ili Tiler is fully licensed and insured. We carry liability insurance and workers' compensation coverage for your peace of mind.
-              </p>
-            </div>
-            
-            <div>
-              <h3 className="text-lg font-semibold text-slate-800 mb-3">Do you offer warranties on your work?</h3>
-              <p className="text-slate-600">
-                Yes, we provide a 2-year warranty on our workmanship. This is in addition to any manufacturer warranties on the materials used for your project.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </div>
   );
 };
